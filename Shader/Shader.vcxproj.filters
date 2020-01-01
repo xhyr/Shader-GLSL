@@ -21,9 +21,27 @@
     <ClCompile Include="GL\gl_core_4_3.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="XHY\program.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="XHY\utitlity.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GL\gl_core_4_3.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="XHY\program.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="global.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="XHY\log.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="XHY\utitlity.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

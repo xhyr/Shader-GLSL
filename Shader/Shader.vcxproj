@@ -155,9 +155,15 @@
   <ItemGroup>
     <ClCompile Include="GL\gl_core_4_3.c" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="XHY\program.cpp" />
+    <ClCompile Include="XHY\utitlity.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GL\gl_core_4_3.h" />
+    <ClInclude Include="global.h" />
+    <ClInclude Include="XHY\log.h" />
+    <ClInclude Include="XHY\program.h" />
+    <ClInclude Include="XHY\utitlity.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

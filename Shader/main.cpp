@@ -6,6 +6,9 @@
 #include"GL/gl_core_4_3.h"
 #include"GLFW/glfw3.h"
 
+#include"XHY/utitlity.h"
+#include"XHY/program.h"
+
 const unsigned int SCR_WIDTH = 1280;
 const unsigned int SCR_HEIGHT = 720;
 
@@ -34,13 +37,14 @@ int main()
 	glfwSetCursorPosCallback(window, mouse_callback);
 	glfwSetScrollCallback(window, scroll_callback);*/
 
-	int loaded = ogl_LoadFunctions();
-	if (loaded == ogl_LOAD_FAILED)
-		return -1;
-	else
-	{
-		int num_failed = loaded - ogl_LOAD_SUCCEEDED;
-		printf("Number of functions failed to load: %d\n", num_failed);
-	}
+	xhy::PrintDeviceInfo();
+	xhy::Program::ShaderVec shaders;
+	shaders.emplace_back(GL_VERTEX_SHADER, "D:/Shader/GLSL/basic.vert", "vertex shader");
+	shaders.emplace_back(GL_FRAGMENT_SHADER, "D:/Shader/GLSL/basic.frag", "fragment shader");
+	xhy::Program basic_program(shaders);
+
+
+
+
 	return 0;
 }
